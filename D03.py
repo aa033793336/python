@@ -9,5 +9,5 @@ print(a)
 #D03#2
 def Pascal(db):
     return 20*np.power(10, db/20)
-b=Pascal(2.3)/Pascal(50)
+b=Pascal(30)/Pascal(50)
 print(b)
