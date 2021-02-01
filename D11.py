@@ -9,8 +9,6 @@ q_df = pd.DataFrame([['male', 'teacher'],
 q_df=q_df.fillna('others')
 print(q_df)
 
-from sklearn.preprocessing import LabelEncoder
-q_df['Profession_label'] = LabelEncoder().fit_transform(q_df['Profession'].values)
+a=pd.get_dummies(q_df[['Profession']])
+q_df = pd.concat([q_df, a], axis=1)
 print(q_df)
-
-#使用順序性編排職業類別，方便做統計與索引
