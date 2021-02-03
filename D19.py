@@ -18,12 +18,11 @@ for x,y in zip(X,-Y2):
 fig = plt.figure()
 
 plt.axes([0.1,0.1,.8,.8])
-plt.xticks([]), plt.yticks([])
 
 plt.axes([0.2,0.2,.3,.3])
+plt.xticks([0,10]), plt.yticks([-1,1])
 plt.bar(X, +Y1, facecolor='#9999ff', edgecolor='white')
 plt.bar(X, +-Y2, facecolor='#ff9999', edgecolor='white')
-plt.xticks([]), plt.yticks([])
 
 plt.ylim(-1.25,+1.25)
 plt.show()
